@@ -16,6 +16,7 @@ export const SavedRecipes = () => {
           `https://mernreceipebackend.onrender.com/recipes/savedRecipes/${userID}`
         );
         setSavedRecipes(response.data.savedRecipes);
+        console.log(response.data.SavedRecipes)
           } catch (err) {
         console.error(err);
       }
