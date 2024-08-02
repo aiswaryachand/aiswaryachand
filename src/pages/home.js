@@ -46,9 +46,13 @@ export const Home = () => {
     }
   };
 
-  const isRecipeSaved = (id) => Array.isArray(savedRecipes) && savedRecipes.includes(id);
-
-  return (
+  // const isRecipeSaved = (id) => Array.isArray(savedRecipes) && savedRecipes.includes(id);
+  const isRecipeSaved = (id) => {if (Array.isArray(savedRecipes)) 
+    {
+    return savedRecipes.includes(id);
+   }
+  return false;}
+    return (
     <div>
       <h1 > Diet Recipes</h1>
       <ul>
