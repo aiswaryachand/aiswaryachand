@@ -31,7 +31,7 @@ export const Home = () => {
     
     fetchRecipe();
     fetchSavedRecipes();
-  }, []); 
+  }, [userID]); 
 
   const saveRecipe = async (recipeID) => {
     try {
@@ -39,14 +39,14 @@ export const Home = () => {
         recipeID,
         userID,
       });
-      setSavedRecipes(response.data.savedRecipes)
+      setSavedRecipes(response.data.savedRecipes || [])
       console.log(response.data.savedRecipes);
         } catch (err) {
       console.error(err);
     }
   };
 
-  const isRecipeSaved = (id) => savedRecipes.includes(id);
+  const isRecipeSaved = (id) => Array.isArray(savedRecipes) && savedRecipes.includes(id);
 
   return (
     <div>
