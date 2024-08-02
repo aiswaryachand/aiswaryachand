@@ -8,7 +8,7 @@ export const Auth = () => {
     <div className="auth">
       <Login />
       <Register />
-    </div>
+    </div>   
   );
 };
 
