@@ -5,7 +5,7 @@ import { Auth } from "./pages/auth";
 import { CreateRecipe } from "./pages/create-recipe";
 import { Home } from "./pages/home";
 import { SavedRecipes } from "./pages/saved-recipes";
-
+import { Chart } from "./components/Chart";
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
           <Route path="/create-recipe" element={<CreateRecipe />} />
           <Route path="/saved-recipes" element={<SavedRecipes />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/Chart" element={<Chart />}/>
         </Routes>
       </Router>
     </div>

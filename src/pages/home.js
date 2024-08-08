@@ -59,10 +59,8 @@ export const Home = () => {
         {
         recipes.map((recipe) => (
           <li key={recipe._id}>
-           
-            <div>
-            {/* let savedRecipes */}
-            {savedRecipes.length > 0 && (
+           <div>
+           {savedRecipes.length > 0 && (
               <button
                 onClick={() => saveRecipe(recipe._id)}
                 disabled={isRecipeSaved(recipe._id)}

@@ -23,7 +23,7 @@ export const SavedRecipes = () => {
     };
     
     fetchSavedRecipes();
-  }, []); 
+  }, [userID]); 
 
   
   
