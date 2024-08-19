@@ -8,7 +8,7 @@ import { SavedRecipes } from "./pages/saved-recipes";
 import { Chart } from "./components/Chart";
 function App() {
   return (
-    <div className="App">
+    <div className="App">  
       <Router>
         <Navbar />
         <Routes>

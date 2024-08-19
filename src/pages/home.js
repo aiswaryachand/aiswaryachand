@@ -68,10 +68,10 @@ export const Home = () => {
                 {isRecipeSaved(recipe._id) ? "Saved" : "Save"}
               </button>
             )}</div>
-             {/* <h2>{recipe.name}</h2> </div>
+             <h2>{recipe.name}</h2> 
 
 
-             <button onClick={() => saveRecipe(recipe._id)}
+             {/* <button onClick={() => saveRecipe(recipe._id)}
                 disabled={isRecipeSaved(recipe._id)}> 
                {isRecipeSaved(recipe._id) ? "Saved" : "Save"} 
               </button>
