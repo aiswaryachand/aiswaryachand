@@ -64,10 +64,12 @@ export const CreateRecipe = () => {
             key={index}
             type="text"
             name="ingredients"
-            value={recipe.ingredients}
+            value={ingredient}
             onChange={(event) => handleIngredientChange(event, index)}
           />
         ))}
+
+      
         <button onClick={addIngredient} type="button">
           Add Ingredient
         </button>
@@ -75,7 +77,7 @@ export const CreateRecipe = () => {
         <textarea
           id="instructions"
           name="instructions"
-          // value={recipe.instructions}
+          value={recipe.instructions}
           onChange={handleChange}
         ></textarea>
         <label htmlFor="imageUrl">Image URL</label>
