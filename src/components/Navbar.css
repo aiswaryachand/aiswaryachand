@@ -1,0 +1,47 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem; /* Padding around the navbar */
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center; /* Center all navigation links */
+    flex-grow: 1;
+  }
+  
+  .nav-links .nav-link {
+    margin: 0 15px; /* Adjust spacing between links */
+    font-size: 1.2rem; /* Font size for navigation links */
+  }
+  
+  .ml-auto {
+    margin-left: auto; /* Push logout button to the right */
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+    }
+  
+    .nav-links {
+      margin-bottom: 1rem; /* Space below the navigation links */
+    }
+  
+    .ml-auto {
+      margin-left: 0;
+      margin-top: 1rem; /* Space above logout button on small screens */
+    }
+  }
+  

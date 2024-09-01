@@ -1,0 +1,56 @@
+.create-recipe {
+    color: #333; /* Example color that matches the home page */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h2 {
+    color: #2c3e50; /* Match this color to the home page header */
+    font-family: 'Arial', sans-serif; /* Example font */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e; /* Text color matching home page */
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #2980b9; /* Button color matching home page */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  button:hover {
+    background-color: #3498db;
+  }
+  
+  .add-ingredient-btn {
+    margin-bottom: 20px;
+    background-color: #3498db; /* Green button to add ingredient */
+  }
+  
+  .add-ingredient-btn:hover {
+    background-color: #2e33cc;
+  }
+  
+  .submit-btn {
+    margin-top: 20px;
+  }
+  
